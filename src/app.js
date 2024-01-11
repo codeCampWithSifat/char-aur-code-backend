@@ -18,9 +18,9 @@ app.use(cookieParser());
 app.use(express.static("public"));
 
 // testing Route
-// app.get("/test", (req, res) => {
-//   res.send("Hello Testing Route");
-// });
+app.get("/test", (req, res) => {
+  res.send("Hello Testing Route");
+});
 
 // routes import
 import userRouter from "./routes/user.routes.js";
